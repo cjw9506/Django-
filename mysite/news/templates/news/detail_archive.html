@@ -7,8 +7,8 @@
 
 {% for article in article_list %}
     <p>Article Headline : {{ article.headline }}</p>
+    <p>Article Content : {{ article.content }}</p>
     <p>Reporter : {{ article.reporter.full_name }}</p>
     <p>Published : {{ article.pub_date|date:"F j, Y" }}</p>
-    <p>Content : {{article.content}}</p>
 {% endfor %}
 {% endblock %}
